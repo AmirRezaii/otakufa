@@ -7,7 +7,7 @@ body {
 
 .header {
 	border-bottom: 1px solid #E5E5E5;
-	height: 100px;
+	height: 105px;
 	position: relative;
 }
 
@@ -24,14 +24,14 @@ body {
 	background-size: contain;
 	width: 30px;
 	height: 30px;
-	top: 4px;
+	top: 8px;
 	left: 20px;
 }
 
 .header .search-icon {
 	position: absolute;
-	top: 13px;
-	right: 29%;
+	top: 18px;
+	right: 29.5%;
 	z-index: 1;
 	color: #8a8a8a; 
 }
@@ -41,7 +41,7 @@ body {
 	right: 50%; 
 	padding-right: 40px;
 	transform: translate(50%);
-	height: 30px;
+	height: 40px;
 	width: 40%;
 	border: none;
 	background-color: #E5E5E5;
@@ -60,7 +60,7 @@ body {
 .header .auth {
 	position: absolute;
 	left: calc(100vw / 9);
-	top: 10px;
+	top: 14px;
 	font-size: 14px;
 	text-decoration: none;
 	color: #3A3A3A;
@@ -158,6 +158,9 @@ body {
 		padding: 0;
 		padding-top: 5px;
 	}
+	.main {
+		padding: 0
+	}
 	.header {
 		display: flex;
 		justify-content: center;
@@ -170,13 +173,13 @@ body {
 		left: calc(100vw / 6);
 	}
 	.header .search-area {
-		top: 60%;
+		top: 55%;
 		right: 20px;
 		transform: translate(0);
 		width: 50%;
 	}
 	.header .search-icon {
-		top: 67%;
+		top: 68%;
 		right: 30px;
 	}
 	.header .cart {

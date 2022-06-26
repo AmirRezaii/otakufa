@@ -2,10 +2,12 @@
 function set_open() {
     $(".menu").addClass("menu-open")
     $(".menu-btn").hide()
+    $("body").css("overflow", "hidden")
 }
 function set_closed() {
     $(".menu").removeClass("menu-open")
     $(".menu-btn").show()
+    $("body").css("overflow", "auto")
 }
 
 // pagination logic for slider
@@ -26,10 +28,17 @@ $(".left-btn").click(() => {
     $(".slider").scrollLeft($(".slider").scrollLeft() + SWIDTH)
 })
 $(".right-btn").click(() => {
-    $(".slider").scrollLeft($(".slider").scrollLeft()-SWIDTH)
+    $(".slider").scrollLeft($(".slider").scrollLeft() - SWIDTH)
 })
 
 function page_btn(e) {
     $(".slider").scrollLeft(SWIDTH*e)
 }
 
+setInterval(() => {
+    if($(".slider").scrollLeft() <= SWIDTH*4) {
+        $(".slider").scrollLeft(0)
+    } else {
+        $(".slider").scrollLeft($(".slider").scrollLeft() + SWIDTH)
+    }
+}, 5000)

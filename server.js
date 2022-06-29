@@ -13,14 +13,17 @@ app.set('view engine', 'ejs')
 app.get('/', (req, res) => {
     res.render('index')
 })
-app.get('/manga', (req, res) => {
-    res.render('manga')
+app.get('/products', (req, res) => {
+    res.render('404')
 })
-app.get('/light', (req, res) => {
-    res.render('light')
+app.get('/about', (req, res) => {
+    res.render('404')
 })
-app.get('/accessory', (req, res) => {
-    res.render('accessory')
+app.get('/qna', (req, res) => {
+    res.render('404')
+})
+app.get('/auth', (req, res) => {
+    res.render('404')
 })
 
 app.listen(process.env.PORT || 3000)
